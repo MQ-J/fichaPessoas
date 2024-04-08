@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #040303;
+    color: azure;
+
+    position: fixed;
+    top: 0;
+
+    padding: 15px;
+    width: 100%;
+}
+
+main {
+    margin-top: 54px;
+    height: calc(100vh - 54px);
+    display: grid;
+    grid-template-areas:
+        "menu content content content content content"
+        "menu content content content content content"
+        "menu content content content content content";
+}
+
+#menu {
+    grid-area: menu;
+    background-color: #F5F5F5;
+    height: 100%;
+}
+
+#content {
+    grid-area: content;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-left: 10px;
+}
+
+.card {
+    background-color: #F5F5F5;
+    height:fit-content;
+}
+.cardMain {
+    display: flex;
+}
+.contatos {
+    display: flex;
+}
+.cardFooter {
+    text-align: end;
+}
